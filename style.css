@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: #131419;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.container{
+    height: auto;
+    width:auto;
+    background: linear-gradient(to bottom, #2b2d47 10%, #181926);
+    border-radius: 20px;
+    padding:30px;
+    box-shadow: inset 1px 2px 0px rgb(255 255 255 / 18%),inset -2px -2px -2p rgb(0 0 0 / 65%); 
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+#startingPage{
+    height:220px;
+    width:400px;
+}
+#startingPage h2, #winner h2{
+    font-size:50px;
+    color:#c3c4ca;
+}
+#startingPage #line{
+    height:1px;
+    width:100%;
+    background: #c3c4ca;
+}
+#startingPage h4{
+    padding-top: 15px;
+    font-size:25px;
+    color:#b9b9c5;
+}
+#startingPage #button{
+    width:100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+#button button{
+    height:55px;
+    width:180px;
+    cursor:pointer;
+    background: rgb(184, 37, 66);
+    font-weight: bold;
+    border:none;
+    outline:none;
+    font-size:15px;
+    border-radius:10px;
+    transform: scale(1);
+    transition:0.5s;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 26%), -2px -2px 5px rgb(0 0 0 /87%);
+    color:#b9b9c5
+}
+#button button:first-child{
+    margin-right: 40px;
+}
+#startingPage #button button:hover , #winner #button button:hover{
+    transform:scale(0.90);
+}
+#winner {
+    display:none;
+}
+#winner #button{
+    height:auto;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+}
+#winner #button button{
+    margin-top: 20px;
+}
+
+#mainPage{
+    height:550px;
+    width:350px;
+    padding:20px;
+    position:relative;
+    display:none;
+}
+#mainPage #headerBtns{
+    height:60px;
+    width:310px;
+    border-radius: 50px;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 26%), -2px -2px 5px rgb(0 0 0 /87%);
+}
+#mainPage #headerBtns button{
+    height:60px;
+    width:160px;
+    border: radius 50px;
+    border:none;
+    outline:none;
+    background: transparent;
+    font-size:20px;
+    color:antiquewhite;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+#mainPage #headerBtns #Oturn{
+    left:160px;
+    z-index: 3;
+}
+#showChange{
+    position:absolute;
+    top:0;
+    left:0;
+    height:60px;
+    width:160px;
+    border-radius: 50px;
+    background:rgb(184, 37, 66);
+    z-index:1;
+    transition:0.2s;
+}
+#board{
+    height:400px;
+    width:330px;
+    display:grid;
+    position:absolute;
+    top:150px;
+    left:10px;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 15px;
+}
+#board .box{
+    height:100px;
+    width:100px;
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 /87%);
+    display:grid;
+    place-content: center;
+    cursor:pointer;
+}
+#board .box i{
+    font-size: 60px;
+    color:rgb(184, 37, 66);
+}

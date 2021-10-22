@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b9ee7ed50.js" crossorigin="anonymous"></script>
+    <title>Tic Tac Toe - The Game</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Starting Page-->
+        <div id="startingPage">
+            <h2>Tic Tac Toe </h2>
+            <div id="line"></div>
+            <h4>Select Your Design</h4>
+            <div id="button">
+                <button class="choose" id="playerX">Player ( X )</button>
+                <button class="choose" id="playerO">Player ( O )</button>
+            </div>
+        </div>
+        <div id="mainPage">
+            <div id="headerBtns">
+                <button id="Xturn">X Turn</button>
+                <button id="Oturn">O Turn</button>
+                <div id="showChange"></div>
+            </div>
+            <div id="board">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <!--Winner Page-->
+        <div id="winner">
+            <h2 id="winnerName">Player X Wins!</h2>
+            <div id="button">
+                <button id="quit">Play Again</button>
+            </div>
+        </div>
+        <script src="js.js"></script>
+</body>
+</html>
+        
